@@ -120,7 +120,12 @@
         <div class="mobile-drawer" id="mobileDrawer">
             <div class="drawer-header">
                 <div class="brand-name">FILET <span class="highlight">MAROC</span></div>
-                <button class="drawer-close" id="drawerClose"><i data-lucide="x"></i></button>
+                <div class="drawer-lang-selector">
+                    <button id="drawerLangFrBtn" class="lang-btn active">FR</button>
+                    <span class="lang-sep">/</span>
+                    <button id="drawerLangArBtn" class="lang-btn">عربي</button>
+                </div>
+                <button class="drawer-close" id="drawerClose" aria-label="Fermer le menu"><i data-lucide="x"></i></button>
             </div>
             <div class="drawer-links">
                 <a href="#about" class="drawer-link"><i data-lucide="info"></i> <span data-i18n="nav_about">À Propos</span></a>
@@ -128,6 +133,7 @@
                 <a href="#calculator" class="drawer-link"><i data-lucide="calculator"></i> <span data-i18n="nav_calculator">Calculateur Devis</span></a>
                 <a href="#pourquoi" class="drawer-link"><i data-lucide="award"></i> <span data-i18n="nav_why">Pourquoi Nous</span></a>
                 <a href="#realisations" class="drawer-link"><i data-lucide="map-pin"></i> <span data-i18n="nav_realisations">Réalisations</span></a>
+                <a href="#blog" class="drawer-link"><i data-lucide="book-open"></i> <span data-i18n="nav_blog">Guides & Blog</span></a>
                 <a href="#faq" class="drawer-link"><i data-lucide="help-circle"></i> <span data-i18n="nav_faq">FAQ</span></a>
             </div>
             <div class="drawer-actions">
@@ -139,6 +145,7 @@
                 </a>
             </div>
         </div>
+        <div class="drawer-backdrop" id="drawerBackdrop"></div>
     </header>
 
     <!-- HERO SECTION -->

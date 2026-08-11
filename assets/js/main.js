@@ -413,14 +413,19 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlTag.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
         }
 
-        if (langFrBtn && langArBtn) {
-            if (lang === 'fr') {
-                langFrBtn.classList.add('active');
-                langArBtn.classList.remove('active');
-            } else {
-                langArBtn.classList.add('active');
-                langFrBtn.classList.remove('active');
-            }
+        const drawerLangFrBtn = document.getElementById('drawerLangFrBtn');
+        const drawerLangArBtn = document.getElementById('drawerLangArBtn');
+
+        if (lang === 'fr') {
+            if (langFrBtn) langFrBtn.classList.add('active');
+            if (langArBtn) langArBtn.classList.remove('active');
+            if (drawerLangFrBtn) drawerLangFrBtn.classList.add('active');
+            if (drawerLangArBtn) drawerLangArBtn.classList.remove('active');
+        } else {
+            if (langArBtn) langArBtn.classList.add('active');
+            if (langFrBtn) langFrBtn.classList.remove('active');
+            if (drawerLangArBtn) drawerLangArBtn.classList.add('active');
+            if (drawerLangFrBtn) drawerLangFrBtn.classList.remove('active');
         }
 
         document.querySelectorAll('[data-i18n]').forEach(elem => {
@@ -445,6 +450,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (langFrBtn) langFrBtn.addEventListener('click', () => setLanguage('fr'));
     if (langArBtn) langArBtn.addEventListener('click', () => setLanguage('ar'));
+
+    const drawerLangFrBtn = document.getElementById('drawerLangFrBtn');
+    const drawerLangArBtn = document.getElementById('drawerLangArBtn');
+    if (drawerLangFrBtn) drawerLangFrBtn.addEventListener('click', () => setLanguage('fr'));
+    if (drawerLangArBtn) drawerLangArBtn.addEventListener('click', () => setLanguage('ar'));
 
     /* 1. SECTOR TABS HANDLER */
     const tabBtns = document.querySelectorAll('.tab-btn');
@@ -558,23 +568,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileToggle = document.getElementById('mobileToggle');
     const mobileDrawer = document.getElementById('mobileDrawer');
     const drawerClose = document.getElementById('drawerClose');
+    const drawerBackdrop = document.getElementById('drawerBackdrop');
     const drawerLinks = document.querySelectorAll('.drawer-link');
 
-    if (mobileToggle && mobileDrawer) {
-        mobileToggle.addEventListener('click', () => {
-            mobileDrawer.classList.add('active');
-        });
+    function openDrawer() {
+        if (mobileDrawer) mobileDrawer.classList.add('active');
+        if (drawerBackdrop) drawerBackdrop.classList.add('active');
+        document.body.classList.add('menu-open');
+    }
 
-        if (drawerClose) {
-            drawerClose.addEventListener('click', () => {
-                mobileDrawer.classList.remove('active');
-            });
-        }
+    function closeDrawer() {
+        if (mobileDrawer) mobileDrawer.classList.remove('active');
+        if (drawerBackdrop) drawerBackdrop.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    }
+
+    if (mobileToggle && mobileDrawer) {
+        mobileToggle.addEventListener('click', openDrawer);
+        if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+        if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
 
         drawerLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileDrawer.classList.remove('active');
-            });
+            link.addEventListener('click', closeDrawer);
         });
     }
 
