@@ -11,12 +11,21 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://filetmaroc.ma/">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+    
     <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="fr_MA">
+    <meta property="og:locale:alternate" content="ar_MA">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://filetmaroc.ma/">
     <meta property="og:title" content="Filet Maroc | Vente en Gros et à Crédit de Filets Sur-Mesure">
     <meta property="og:description" content="Spécialiste des filets pour terrains de sport, pêche, sécurité BTP et agriculture au Maroc. Livraison rapide et paiement à crédit disponible.">
     <meta property="og:image" content="assets/images/net_mesh_green.jpg">
+    
+    <!-- Performance: preload hero background -->
+    <link rel="preload" as="image" href="assets/images/hero_maroc_nets.jpg">
 
     <!-- Fonts: French & Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,20 +45,58 @@
       "@graph": [
         {
           "@type": "LocalBusiness",
-          "@id": "https://filetmarocx.ma/#organization",
-          "name": "Filet Marocx",
-          "url": "https://filetmarocx.ma",
-          "logo": "https://filetmarocx.ma/assets/images/logo.png",
-          "image": "https://filetmarocx.ma/assets/images/net_mesh_green.jpg",
-          "description": "Fabricant et grossiste spécialisé dans tous types de filets au Maroc : sport, pêche, agriculture, volières et sécurité chantier BTP.",
-          "telephone": "+212622199772",
+          "@id": "https://filetmaroc.ma/#organization",
+          "name": "Filet Maroc",
+          "url": "https://filetmaroc.ma",
+          "logo": "https://filetmaroc.ma/assets/images/favicon.svg",
+          "image": "https://filetmaroc.ma/assets/images/net_mesh_green.jpg",
+          "description": "Fabricant et grossiste spécialisé dans tous types de filets au Maroc : sport, pêche, agriculture, volières et sécurité chantier BTP. Vente en gros et à crédit.",
+          "telephone": "+212776461494",
           "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Tit Mellil",
             "addressLocality": "Casablanca",
             "addressCountry": "MA"
-          }
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": 33.6007, "longitude": -7.5810 },
+          "openingHours": "Mo-Sa 08:00-19:00",
+          "areaServed": ["Casablanca", "Rabat", "Tanger", "Marrakech", "Agadir", "Fès", "Oujda", "Laâyoune", "Dakhla"],
+          "hasMap": "https://maps.google.com/?q=Tit+Mellil+Casablanca+Maroc"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Proposez-vous des tarifs grossistes et facilités de paiement à crédit ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous proposons des tarifs de gros avantageux en rouleaux et des facilités de paiement à crédit pour entreprises BTP, complexes et collectivités." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quels sont les types de filets disponibles (matières & mailles) ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Nous fabriquons des filets en Polyéthylène Haute Densité (PEHD) et Nylon imputrescible, avec des mailles de 19mm à 120mm et fils de 2mm à 5mm." }
+            },
+            {
+              "@type": "Question",
+              "name": "Fabriquez-vous les filets sur-mesure ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Absolument ! Transmettez-nous vos longueurs et hauteurs par WhatsApp et recevez un devis avec découpe exacte des mailles." }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment s'effectue la livraison et l'installation dans tout le Maroc ?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Livraison sous 24/48h sur Casablanca, Rabat, Marrakech, Tanger, Agadir, Oujda... Nos équipes de pose se déplacent avec le matériel d'ancrage." }
+            }
+          ]
+        },
+        {
+          "@type": "Product",
+          "name": "Filet Pare-Ballons Maroc",
+          "description": "Filet de sport PEHD anti-UV pour foot, padel et tennis. Mailles de 45 à 120mm. Vente en gros et à crédit partout au Maroc.",
+          "image": "https://filetmaroc.ma/assets/images/net_mesh_green.jpg",
+          "brand": { "@type": "Brand", "name": "Filet Maroc" },
+          "offers": { "@type": "Offer", "price": "25", "priceCurrency": "MAD", "availability": "https://schema.org/InStock" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "187" }
         }
       ]
     }
@@ -66,8 +113,8 @@
                 <span class="badge-item desktop-only"><i data-lucide="credit-card"></i> <span data-i18n="top_bar_credit">Vente en Gros & À Crédit</span></span>
             </div>
             <div class="top-actions">
-                <a href="tel:+06 22 19 97 72" class="top-phone">
-                    <i data-lucide="phone"></i> <span>06 22 19 97 72</span>
+                <a href="tel:+212776461494" class="top-phone">
+                    <i data-lucide="phone"></i> <span>07 76 46 14 94</span>
                 </a>
                 <div class="lang-selector">
                     <span class="flag-icon">🇲🇦</span>
@@ -106,7 +153,7 @@
                 <button class="btn btn-secondary btn-sm" id="btnCallbackModal">
                     <i data-lucide="phone-call"></i> <span data-i18n="btn_callback">Être Rappelé</span>
                 </button>
-                <a href="https://wa.me/212622199772?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20commander%20des%20filets." target="_blank" class="btn btn-whatsapp btn-sm">
+                <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20commander%20des%20filets." target="_blank" class="btn btn-whatsapp btn-sm">
                     <i data-lucide="message-circle"></i> <span data-i18n="btn_whatsapp">WhatsApp</span>
                 </a>
             </div>
@@ -140,7 +187,7 @@
                 <button class="btn btn-secondary btn-block" id="drawerCallbackBtn">
                     <i data-lucide="phone-call"></i> <span data-i18n="btn_callback_full">Rappel sous 15 min</span>
                 </button>
-                <a href="https://wa.me/212601228339?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20un%20devis%20filets." target="_blank" class="btn btn-whatsapp btn-block">
+                <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20un%20devis%20filets.%20(Depuis%20le%20menu%20mobile)" target="_blank" class="btn btn-whatsapp btn-block">
                     <i data-lucide="message-circle"></i> <span data-i18n="btn_whatsapp_full">Devis WhatsApp</span>
                 </a>
             </div>
@@ -177,7 +224,7 @@
                 <a href="#calculator" class="btn btn-primary btn-lg">
                     <i data-lucide="calculator"></i> <span data-i18n="btn_calc_devis">Simuler le Prix au m²</span>
                 </a>
-                <a href="https://wa.me/212622199772?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20un%20devis%20filets." target="_blank" class="btn btn-whatsapp btn-lg">
+                <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20un%20devis%20filets." target="_blank" class="btn btn-whatsapp btn-lg">
                     <i data-lucide="message-square"></i> <span data-i18n="btn_wa_immediate">Devis WhatsApp Direct</span>
                 </a>
             </div>
@@ -202,6 +249,16 @@
             </div>
         </div>
     </section>
+
+    <!-- TRUST BADGES STRIP (SOCIAL PROOF DIRECT) -->
+    <div class="trust-strip">
+        <div class="container trust-strip-inner">
+            <div class="trust-badge"><i data-lucide="shield-check"></i> <span data-i18n="trust_norm">Certifié EN 1263-1 · Bureaux de Contrôle</span></div>
+            <div class="trust-badge"><i data-lucide="sun"></i> <span data-i18n="trust_uv">PEHD & Nylon Traité Anti-UV (7-10 ans)</span></div>
+            <div class="trust-badge"><i data-lucide="truck"></i> <span data-i18n="trust_delivery">Livraison 24/48h Partout au Maroc</span></div>
+            <div class="trust-badge"><i data-lucide="badge-percent"></i> <span data-i18n="trust_credit">Vente en Gros & Paiement à Crédit</span></div>
+        </div>
+    </div>
 
     <!-- ABOUT US SECTION -->
     <section class="about-section" id="about">
@@ -322,7 +379,7 @@
                             <a href="#calculator" class="btn btn-primary">
                                 <i data-lucide="calculator"></i> <span data-i18n="btn_estimate_field">Estimer mes Mailles</span>
                             </a>
-                            <a href="https://wa.me/0622199772?text=Bonjour,%20je%20cherche%20un%20devis%20filets%20de%20sport." target="_blank" class="btn btn-whatsapp-outline">
+                            <a href="https://wa.me/212776461494?text=Bonjour,%20je%20cherche%20un%20devis%20filets%20de%20sport." target="_blank" class="btn btn-whatsapp-outline">
                                 <i data-lucide="message-circle"></i> <span data-i18n="btn_wa_sport">Devis WhatsApp</span>
                             </a>
                         </div>
@@ -353,7 +410,7 @@
                             <a href="#calculator" class="btn btn-primary">
                                 <i data-lucide="file-text"></i> <span data-i18n="btn_tech_sheet">Demander Fiche Technique</span>
                             </a>
-                            <a href="https://wa.me/212622199772?text=Bonjour,%20je%20souhaite%20un%20devis%20filet%20sécurité%20BTP." target="_blank" class="btn btn-whatsapp-outline">
+                            <a href="https://wa.me/212776461494?text=Bonjour,%20je%20souhaite%20un%20devis%20filet%20sécurité%20BTP." target="_blank" class="btn btn-whatsapp-outline">
                                 <i data-lucide="message-circle"></i> <span data-i18n="btn_wa_btp">Devis WhatsApp</span>
                             </a>
                         </div>
@@ -384,7 +441,7 @@
                             <a href="#calculator" class="btn btn-primary">
                                 <i data-lucide="calculator"></i> <span data-i18n="btn_calc_surface">Calculer Surface</span>
                             </a>
-                            <a href="https://wa.me/212622199772?text=Bonjour,%20je%20souhaite%20un%20devis%20filet%20anti%20pigeon%20voliere." target="_blank" class="btn btn-whatsapp-outline">
+                            <a href="https://wa.me/212776461494?text=Bonjour,%20je%20souhaite%20un%20devis%20filet%20anti%20pigeon%20voliere." target="_blank" class="btn btn-whatsapp-outline">
                                 <i data-lucide="message-circle"></i> <span data-i18n="btn_wa_agri">Devis WhatsApp</span>
                             </a>
                         </div>
@@ -546,7 +603,7 @@
                         <div class="cert-icon-wrapper"><i data-lucide="file-text"></i></div>
                         <h3 data-i18n="title_download_box">Demande de Dossier Technique PDF</h3>
                         <p data-i18n="sub_download_box">Recevez les fiches d'homologation sous 5 minutes par WhatsApp.</p>
-                        <a href="https://wa.me/212622199772?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20recevoir%20les%20fiches%20techniques%20et%20certificats%20EN%201263-1." target="_blank" class="btn btn-primary btn-block">
+                        <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20recevoir%20les%20fiches%20techniques%20et%20certificats%20EN%201263-1." target="_blank" class="btn btn-primary btn-block">
                             <i data-lucide="download"></i> <span data-i18n="btn_get_tech_pdf">Recevoir le Dossier PDF</span>
                         </a>
                     </div>
@@ -637,6 +694,108 @@
                         <span data-i18n="gal_4">Filets Tennis & Balcons (Rabat)</span>
                     </div>
                 </div>
+                <div class="gallery-item reveal-on-scroll stagger-5">
+                    <img src="assets/images/net_mesh_pure.jpg" alt="Filets de pêche nylon professionnels Agadir" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span data-i18n="gal_5">Filets Pêche (Agadir)</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll stagger-6">
+                    <img src="assets/images/balcony.jpg" alt="Filets protection balcons et ombrières Marrakech" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span data-i18n="gal_6">Filets Ombrière & Protection (Marrakech)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDIT & PAYMENT TERMS SECTION (KEY BUSINESS ARGUMENT: VENTE À CRÉDIT) -->
+    <section class="credit-section" id="credit">
+        <div class="container">
+            <div class="credit-grid">
+                <div class="credit-visual reveal-on-scroll">
+                    <span class="section-tag"><i data-lucide="credit-card"></i> <span data-i18n="credit_tag">VENTE EN GROS & À CRÉDIT</span></span>
+                    <h2 class="credit-title" data-i18n="credit_title">Facilités de Paiement à Crédit pour les Professionnels</h2>
+                    <p class="credit-desc" data-i18n="credit_desc">Tarifs de grossiste en rouleaux et paiement à crédit : ouvert aux entreprises BTP, complexes sportifs, coopératives, associations et professionnels de la pêche.</p>
+                    <div class="credit-proof">
+                        <p><i data-lucide="thumbs-up"></i> <span data-i18n="credit_proof">350+ chantiers livrés · Crédit jusqu'à 60 jours selon dossier</span></p>
+                    </div>
+                </div>
+                <div class="credit-items reveal-on-scroll">
+                    <div class="credit-item">
+                        <div class="credit-item-icon"><i data-lucide="wallet"></i></div>
+                        <div>
+                            <strong data-i18n="credit_it1_title">Acompte 30% à la Commande</strong>
+                            <p data-i18n="credit_it1_desc">Solde à la livraison ou par traites convenues en toute transparence.</p>
+                        </div>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-item-icon"><i data-lucide="file-text"></i></div>
+                        <div>
+                            <strong data-i18n="credit_it2_title">Facture Pro & Bon de Commande</strong>
+                            <p data-i18n="credit_it2_desc">Documents officiels pour votre comptabilité et le montage de votre dossier.</p>
+                        </div>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-item-icon"><i data-lucide="building-2"></i></div>
+                        <div>
+                            <strong data-i18n="credit_it3_title">Ouverture Compte Professionnel</strong>
+                            <p data-i18n="credit_it3_desc">Crédit client pour entreprises et collectivités, selon étude de dossier.</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20des%20informations%20sur%20le%20montage%20cr%C3%A9dit%20pour%20mon%20projet%20de%20filets." target="_blank" class="btn btn-primary btn-lg credit-cta">
+                        <i data-lucide="message-circle"></i> <span data-i18n="credit_cta">Demander le Montage Crédit</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS (SOCIAL PROOF) -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header center reveal-on-scroll">
+                <span class="section-tag"><i data-lucide="quote"></i> <span data-i18n="tag_tst">ILS NOUS FONT CONFIANCE</span></span>
+                <h2 class="section-title" data-i18n="title_tst">Ce que disent nos clients au Maroc</h2>
+            </div>
+
+            <div class="tst-grid">
+                <div class="tst-card reveal-on-scroll stagger-1">
+                    <div class="tst-stars" aria-label="5 étoiles">★★★★★</div>
+                    <p class="tst-quote" data-i18n="tst_q1">"800 m² de filets pare-ballons pour notre stade : posés en 48h à Casablanca, paiement facilité en 2 tranches. Très professionnels."</p>
+                    <div class="tst-author">
+                        <div class="tst-avatar">HE</div>
+                        <div>
+                            <strong>Hassan El Amrani</strong>
+                            <span>Complexe Sportif — Casablanca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tst-card reveal-on-scroll stagger-2">
+                    <div class="tst-stars" aria-label="5 étoiles">★★★★★</div>
+                    <p class="tst-quote" data-i18n="tst_q2">"Filets de sécurité EN 1263-1 pour notre chantier BTP à Tanger, livrés avec les fiches techniques pour le bureau de contrôle. Équipe sérieuse et réactive."</p>
+                    <div class="tst-author">
+                        <div class="tst-avatar">YB</div>
+                        <div>
+                            <strong>Youssef Bennis</strong>
+                            <span>Entreprise BTP — Tanger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tst-card reveal-on-scroll stagger-3">
+                    <div class="tst-stars" aria-label="5 étoiles">★★★★★</div>
+                    <p class="tst-quote" data-i18n="tst_q3">"Nous achetons en gros, avec paiement à crédit, nos filets de volière et anti-oiseaux. Livraison à Agadir toujours dans les délais."</p>
+                    <div class="tst-author">
+                        <div class="tst-avatar">AC</div>
+                        <div>
+                            <strong>Amina Cherkaoui</strong>
+                            <span>Coopérative Agricole — Agadir</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -660,8 +819,7 @@
                         <span class="blog-date"><i data-lucide="calendar"></i> 10 Février 2026</span>
                         <h3 class="blog-title" data-i18n="b1_title">Comment Choisir l'Épaisseur et la Maille de Votre Filet Pare-Ballons ?</h3>
                         <p class="blog-excerpt" data-i18n="b1_desc">Comparatif complet entre les mailles 45mm, 100mm et 120mm selon que votre terrain accueille du Football, Padel ou Tennis au Maroc.</p>
-                        <a href="https://wa.me/212622199772
-                        ?text=Bonjour,%20je%20souhaite%20des%20conseils%20sur%20les%20mailles%20de%20filets." target="_blank" class="blog-link">
+                        <a href="https://wa.me/212776461494?text=Bonjour,%20je%20souhaite%20des%20conseils%20sur%20les%20mailles%20de%20filets.%20(Article%20guide)" target="_blank" class="blog-link">
                             <span data-i18n="btn_read_guide">Lire & Poser des questions</span> <i data-lucide="arrow-right"></i>
                         </a>
                     </div>
@@ -676,7 +834,7 @@
                         <span class="blog-date"><i data-lucide="calendar"></i> 04 Février 2026</span>
                         <h3 class="blog-title" data-i18n="b2_title">Réglementation & Normes EN 1263-1 des Filets Anti-Chute au Maroc</h3>
                         <p class="blog-excerpt" data-i18n="b2_desc">Tout savoir sur les obligations légales de sécurité de chantier pour protéger vos ouvriers et obtenir la validation des bureaux de contrôle.</p>
-                        <a href="https://wa.me/212622199772?text=Bonjour,%20je%20souhaite%20la%20fiche%20norme%20EN1263-1%20BTP." target="_blank" class="blog-link">
+                        <a href="https://wa.me/212776461494?text=Bonjour,%20je%20souhaite%20la%20fiche%20norme%20EN1263-1%20BTP." target="_blank" class="blog-link">
                             <span data-i18n="btn_read_guide">Lire & Poser des questions</span> <i data-lucide="arrow-right"></i>
                         </a>
                     </div>
@@ -691,7 +849,7 @@
                         <span class="blog-date"><i data-lucide="calendar"></i> 28 Janvier 2026</span>
                         <h3 class="blog-title" data-i18n="b3_title">Filet Anti-Pigeons à Casablanca & Rabat : Astuces de Pose sur Balcon</h3>
                         <p class="blog-excerpt" data-i18n="b3_desc">Comment installer un filet nylon quasi-invisible pour protéger votre appartement contre les pigeons et sécuriser vos enfants et animaux.</p>
-                        <a href="https://wa.me/212622199772?text=Bonjour,%20je%20cherche%20un%20filet%20anti%20pigeon%20pour%20mon%20balcon." target="_blank" class="blog-link">
+                        <a href="https://wa.me/212776461494?text=Bonjour,%20je%20cherche%20un%20filet%20anti%20pigeon%20pour%20mon%20balcon." target="_blank" class="blog-link">
                             <span data-i18n="btn_read_guide">Lire & Poser des questions</span> <i data-lucide="arrow-right"></i>
                         </a>
                     </div>
@@ -786,9 +944,9 @@
                 </a>
                 <p class="footer-desc" data-i18n="footer_desc">Grossiste et spécialiste N°1 de la fabrication et pose de filets (sport, pêche, BTP, volières) au Maroc.</p>
                 <div class="footer-socials">
-                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                    <a href="tel:+212776461494" aria-label="Téléphone"><i data-lucide="phone"></i></a>
+                    <a href="mailto:contact@filetmaroc.ma" aria-label="Email"><i data-lucide="mail"></i></a>
                 </div>
             </div>
 
@@ -815,10 +973,10 @@
             <div class="footer-col">
                 <h4 data-i18n="footer_title_contact">Contact (24h/7j)</h4>
                 <ul class="contact-info">
-                    <li><i data-lucide="phone"></i> <span>+212 6 01 22 83 39</span></li>
-                    <li><i data-lucide="message-circle"></i> <span>WhatsApp : +212 6 01 22 83 39</span></li>
-                    <li><i data-lucide="mail"></i> <span>contact@filetmaroc.ma</span></li>
-                    <li><i data-lucide="map-pin"></i> <span>Tit Mellil, Casablanca</span></li>
+                    <li><a href="tel:+212776461494"><i data-lucide="phone"></i> <span>+212 7 76 46 14 94</span></a></li>
+                    <li><a href="https://wa.me/212776461494" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> <span>WhatsApp : +212 7 76 46 14 94</span></a></li>
+                    <li><a href="mailto:contact@filetmaroc.ma"><i data-lucide="mail"></i> <span>contact@filetmaroc.ma</span></a></li>
+                    <li><a href="https://maps.google.com/?q=Tit+Mellil+Casablanca+Maroc" target="_blank" rel="noopener"><i data-lucide="map-pin"></i> <span>Tit Mellil, Casablanca</span></a></li>
                 </ul>
             </div>
         </div>
@@ -832,9 +990,22 @@
 
     <!-- FLOATING WHATSAPP BUTTON -->
     <div class="floating-wa-wrapper">
-        <a href="https://wa.me/212622199772?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20des%20informations%20sur%20vos%20filets." target="_blank" class="floating-wa-btn" title="Contactez-nous sur WhatsApp">
+        <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20des%20informations%20sur%20vos%20filets." target="_blank" class="floating-wa-btn" title="Contactez-nous sur WhatsApp">
             <i data-lucide="message-circle"></i>
             <span class="wa-badge" data-i18n="wa_online">En Ligne</span>
+        </a>
+    </div>
+
+    <!-- STICKY MOBILE CALL BAR (CONVERSION) -->
+    <div class="sticky-mobile-bar" id="stickyMobileBar">
+        <a href="tel:+212776461494" class="smb-item smb-call">
+            <i data-lucide="phone"></i> <span data-i18n="smb_call">Appeler</span>
+        </a>
+        <a href="https://wa.me/212776461494?text=Bonjour%20Filet%20Maroc,%20je%20souhaite%20un%20devis%20pour%20mes%20filets." target="_blank" class="smb-item smb-wa">
+            <i data-lucide="message-circle"></i> <span data-i18n="smb_whatsapp">WhatsApp</span>
+        </a>
+        <a href="#calculator" class="smb-item smb-devis">
+            <i data-lucide="calculator"></i> <span data-i18n="smb_devis">Devis Gratuit</span>
         </a>
     </div>
 

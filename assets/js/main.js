@@ -199,7 +199,49 @@ const translations = {
         modal_opt_peche: "Filets de Pêche Nylon",
         btn_submit_modal: "Envoyer ma Demande",
         ph_name: "Votre Nom / Société *",
-        ph_phone: "N° Téléphone WhatsApp *"
+        ph_phone: "N° Téléphone WhatsApp *",
+        tag_blog: "GUIDES TECHNIQUES & SEO",
+        title_blog: "Conseils & Guides Experts Filets",
+        sub_blog: "Des articles pratiques pour choisir, entretenir et installer vos filets au Maroc.",
+        cat_blog_1: "Sport & Complexes",
+        b1_title: "Comment Choisir l'Épaisseur et la Maille de Votre Filet Pare-Ballons ?",
+        b1_desc: "Comparatif complet entre les mailles 45mm, 100mm et 120mm selon que votre terrain accueille du Football, Padel ou Tennis au Maroc.",
+        cat_blog_2: "Chantiers BTP",
+        b2_title: "Réglementation & Normes EN 1263-1 des Filets Anti-Chute au Maroc",
+        b2_desc: "Tout savoir sur les obligations légales de sécurité de chantier pour protéger vos ouvriers et obtenir la validation des bureaux de contrôle.",
+        cat_blog_3: "Protection Maison",
+        b3_title: "Filet Anti-Pigeons à Casablanca & Rabat : Astuces de Pose sur Balcon",
+        b3_desc: "Comment installer un filet nylon quasi-invisible pour protéger votre appartement contre les pigeons et sécuriser vos enfants et animaux.",
+        btn_read_guide: "Lire & Poser des questions",
+        faq_q4: "Comment s'effectue la livraison et l'installation dans tout le Maroc ?",
+        faq_a4: "Livraison sous 24/48h sur Casablanca, Rabat, Marrakech, Tanger, Agadir, Oujda... Nos équipes de pose se déplacent avec le matériel d'ancrage.",
+        badge_callback_time: "SUPPORT 24/7",
+        title_callback_banner: "Besoin de Filets en Gros ou d'un Devis ?",
+        desc_callback_banner: "Laissez votre numéro et notre conseiller spécialisé vous rappelle immédiatement.",
+        btn_submit_callback: "Demander un Rappel Gratuit",
+        trust_norm: "Certifié EN 1263-1 · Bureaux de Contrôle",
+        trust_uv: "PEHD & Nylon Traité Anti-UV (7-10 ans)",
+        trust_delivery: "Livraison 24/48h Partout au Maroc",
+        trust_credit: "Vente en Gros & Paiement à Crédit",
+        credit_tag: "VENTE EN GROS & À CRÉDIT",
+        credit_title: "Facilités de Paiement à Crédit pour les Professionnels",
+        credit_desc: "Tarifs de grossiste en rouleaux et paiement à crédit : ouvert aux entreprises BTP, complexes sportifs, coopératives, associations et professionnels de la pêche.",
+        credit_it1_title: "Acompte 30% à la Commande",
+        credit_it1_desc: "Solde à la livraison ou par traites convenues en toute transparence.",
+        credit_it2_title: "Facture Pro & Bon de Commande",
+        credit_it2_desc: "Documents officiels pour votre comptabilité et le montage de votre dossier.",
+        credit_it3_title: "Ouverture Compte Professionnel",
+        credit_it3_desc: "Crédit client pour entreprises et collectivités, selon étude de dossier.",
+        credit_cta: "Demander le Montage Crédit",
+        credit_proof: "350+ chantiers livrés · Crédit jusqu'à 60 jours selon dossier",
+        tag_tst: "ILS NOUS FONT CONFIANCE",
+        title_tst: "Ce que disent nos clients au Maroc",
+        tst_q1: "« 800 m² de filets pare-ballons pour notre stade : posés en 48h à Casablanca, paiement facilité en 2 tranches. Très professionnels. »",
+        tst_q2: "« Filets de sécurité EN 1263-1 pour notre chantier BTP à Tanger, livrés avec les fiches techniques pour le bureau de contrôle. Équipe sérieuse et réactive. »",
+        tst_q3: "« Nous achetons en gros, avec paiement à crédit, nos filets de volière et anti-oiseaux. Livraison à Agadir toujours dans les délais. »",
+        smb_call: "Appeler",
+        smb_whatsapp: "WhatsApp",
+        smb_devis: "Devis Gratuit"
     },
     ar: {
         top_bar_norm: "جودة معتمدة PEHD ونيليون",
@@ -301,7 +343,7 @@ const translations = {
         lbl_select_type: "1. نوع الشباك :",
         lbl_select_finish: "2. نوع خياطة الجوانب :",
         opt_sport: "شباك صد الكرات للملاعب (قدم / بادل)",
-        opt_btp: "شباk السلامة لأوراش البناء BTP",
+        opt_btp: "شباك السلامة لأوراش البناء BTP",
         opt_agri: "شباك منع الحمام والطيور / الدواجن",
         opt_balcon: "شباك حماية الشرفات والحيوانات",
         opt_peche: "شباك الصيد البحري نيلون مقوى",
@@ -395,7 +437,32 @@ const translations = {
         modal_opt_peche: "شباك الصيد البحري نيليون",
         btn_submit_modal: "إرسال الطلب الآن",
         ph_name: "الاسم الكامل / الشركة *",
-        ph_phone: "رقم الهاتف / الواتساب *"
+        ph_phone: "رقم الهاتف / الواتساب *",
+        gal_5: "شباك الصيد (أكادير)",
+        gal_6: "شباك التظليل والحماية (مراكش)",
+        trust_norm: "معتمد EN 1263-1 · مكاتب المراقبة",
+        trust_uv: "PEHD ونيليون معالج ضد الشمس (7-10 سنوات)",
+        trust_delivery: "توصيل 24/48 ساعة لجميع المدن",
+        trust_credit: "بيع بالجملة ودفع بالائتمان",
+        credit_tag: "بيع بالجملة وبالائتمان",
+        credit_title: "تسهيلات الدفع بالائتمان للمهنيين",
+        credit_desc: "أسعار الجملة باللفائف والدفع بالائتمان: متاح لشركات البناء والمجمعات الرياضية والتعاونيات والجمعيات والمهنيين.",
+        credit_it1_title: "عربون 30% عند الطلب",
+        credit_it1_desc: "الباقي عند التسليم أو على دفعات متفق عليها بشفافية.",
+        credit_it2_title: "فاتورة وأمر شراء رسمي",
+        credit_it2_desc: "وثائق رسمية لمحاسبتكم وإعداد ملفكم.",
+        credit_it3_title: "فتح حساب مهني",
+        credit_it3_desc: "ائتمان للشركات والجماعات حسب دراسة الملف.",
+        credit_cta: "طلب ملف الائتمان",
+        credit_proof: "أكثر من 350 مشروع مُنجز · ائتمان حتى 60 يوماً حسب الملف",
+        tag_tst: "يثقون فينا",
+        title_tst: "آراء زبنائنا في المغرب",
+        tst_q1: "«طلبنا 800 م² من شباك صد الكرات لملعبنا. تم التركيب خلال 48 ساعة بالدار البيضاء مع تسهيل في الدفع على دفعتين. احترافية عالية.»",
+        tst_q2: "«شباك السلامة EN 1263-1 لأوراش البناء بطنجة مع البطائق التقنية لمكتب المراقبة. فريق جاد وسريع.»",
+        tst_q3: "«نشتري بالجملة وبالائتمان شباك الأقفاص ومنع الطيور. التوصيل لأكادير دائماً في الموعد.»",
+        smb_call: "اتصال",
+        smb_whatsapp: "واتساب",
+        smb_devis: "عرض سعر"
     }
 };
 
@@ -554,7 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (sendCalcToWA) {
             sendCalcToWA.onclick = () => {
-                window.open(`https://wa.me/212601228339?text=${waText}`, '_blank');
+                window.open(`https://wa.me/212776461494?text=${waText}`, '_blank');
             };
         }
     }
@@ -642,10 +709,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalForm) {
         modalForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const msg = currentLang === 'ar' ? 
-                "شكراً لكم ! تم تسجيل طلبكم بنجاح وسيتصل بكم مهندسنا خلال 15 دقيقة." :
-                "Merci ! Votre demande de devis filets a bien été transmise à notre équipe technique.";
-            alert(msg);
+            const modalName = (modalNameInput && modalNameInput.value.trim()) || '-';
+            const modalPhone = (modalPhoneInput && modalPhoneInput.value.trim()) || '-';
+            const sectorSelect = document.getElementById('modalSectorSelect');
+            const sector = sectorSelect ? sectorSelect.options[sectorSelect.selectedIndex].text : '';
+            const pushGreeting = currentLang === 'ar' ? 'السلام عليكم Filet Maroc 👋' : 'Bonjour Filet Maroc 👋';
+            const pushBody = currentLang === 'ar'
+                ? `طلب عرض سعر جديد من الموقع:\n- الاسم / الشركة: ${modalName}\n- الهاتف: ${modalPhone}\n- نوع الشباك: ${sector}\n\nأرجو التواصل معي في أقرب وقت.`
+                : `Nouvelle demande de devis depuis le site :\n- Nom / Société : ${modalName}\n- Tél : ${modalPhone}\n- Type de filet : ${sector}\n\nMerci de me recontacter au plus vite.`;
+            const waMsg = encodeURIComponent(`${pushGreeting}\n\n${pushBody}`);
+            window.open(`https://wa.me/212776461494?text=${waMsg}`, '_blank');
             closeModal();
             modalForm.reset();
         });
@@ -656,10 +729,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (quickCallbackForm) {
         quickCallbackForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const msg = currentLang === 'ar' ? 
-                "شكراً لكم ! سيتصل بكم مسؤول المبيعات في أقرب وقت." :
-                "Merci ! Notre chargé de clientèle vous contactera très rapidement.";
-            alert(msg);
+            const cbName = (cbNameInput && cbNameInput.value.trim()) || '-';
+            const cbPhone = (cbPhoneInput && cbPhoneInput.value.trim()) || '-';
+            const cbGreeting = currentLang === 'ar' ? 'السلام عليكم Filet Maroc 👋' : 'Bonjour Filet Maroc 👋';
+            const cbBody = currentLang === 'ar'
+                ? `طلب اتصال سريع من الموقع:\n- الاسم: ${cbName}\n- الهاتف: ${cbPhone}\n\nاتصلوا بي في أقرب وقت ممكن.`
+                : `Demande de rappel express depuis le site :\n- Nom : ${cbName}\n- Tél : ${cbPhone}\n\nMerci de me rappeler rapidement.`;
+            const cbMsg = encodeURIComponent(`${cbGreeting}\n\n${cbBody}`);
+            window.open(`https://wa.me/212776461494?text=${cbMsg}`, '_blank');
             quickCallbackForm.reset();
         });
     }
