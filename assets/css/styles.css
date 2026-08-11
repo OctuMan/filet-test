@@ -2380,6 +2380,7 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
 @media (max-width: 1180px) {
     .nav-links, .nav-cta-group { display: none !important; }
     .mobile-toggle { display: flex !important; }
+    
 }
 
 @media (max-width: 1024px) {
@@ -2404,9 +2405,46 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
 }
 
 @media (max-width: 768px) {
+    /* Global Mobile Whitespace & Rhythm Reset */
+    section,
+    .hero-section,
+    .about-section,
+    .products-section,
+    .calculator-section,
+    .cert-section,
+    .why-section,
+    .realisations-section,
+    .blog-section,
+    .faq-section,
+    .callback-section {
+        padding: 44px 0 !important;
+    }
+
+    .section-header {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .section-tag {
+        font-size: 0.78rem;
+        margin-bottom: 6px;
+        letter-spacing: 0.5px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
     /* Hero Section Mobile Ultra-Clean UX */
     .hero-section {
-        padding: 24px 0 20px;
+        padding: 60px 0 20px !important;
         min-height: auto;
     }
 
@@ -2418,7 +2456,7 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
         height: 100%;
         background-position: center 20%;
         background-size: cover;
-        opacity: 0.65; /* Crisp netting mesh pattern immediately noticeable on first look */
+        opacity: 1;
     }
 
     .hero-overlay {
@@ -2427,7 +2465,6 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
         left: 0;
         width: 100%;
         height: 100%;
-        /* Subtle radial spotlight behind text for 100% text legibility while side netting shows through */
         background: radial-gradient(ellipse at 50% 35%, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.60) 50%, rgba(248, 250, 252, 0.25) 100%);
         pointer-events: none;
     }
@@ -2446,9 +2483,7 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
         letter-spacing: -0.3px;
     }
 
-    /* Hide redundant long paragraph and stacked pills on mobile to eliminate wall-of-text clutter */
-    .hero-subtitle,
-    .hero-features-pills {
+    .hero-subtitle,.hero-stats-bar  {
         display: none !important;
     }
 
@@ -2484,15 +2519,38 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
         font-size: 0.74rem;
     }
 
+    /* Grids & Cards Spacing on Mobile */
+    .about-grid,
+    .tab-grid,
+    .calc-grid,
+    .cert-grid,
+    .why-grid,
+    .gallery-grid,
+    .blog-grid,
+    .footer-grid,
+    .callback-container {
+        gap: 20px !important;
+    }
+
+    .tab-grid {
+        padding: 22px 16px;
+    }
+
+    .tab-image img {
+        height: 240px;
+        border-radius: var(--radius-md);
+    }
+
     .sector-tabs-wrapper {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 8px;
-        margin: 0 0 24px;
+        padding-bottom: 4px;
+        margin: 0 0 20px;
         width: 100%;
         max-width: 100%;
         scrollbar-width: none;
     }
+    
     .sector-tabs-wrapper::-webkit-scrollbar {
         display: none;
     }
@@ -2500,27 +2558,23 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
     .sector-tabs {
         flex-wrap: nowrap;
         width: max-content;
-        gap: 8px;
+        gap: 6px;
     }
     
     .tab-btn {
         white-space: nowrap;
-        padding: 10px 18px;
-        font-size: 0.88rem;
-    }
-
-    .section-title {
-        font-size: 1.75rem;
+        padding: 9px 15px;
+        font-size: 0.84rem;
     }
 
     /* Calculator Section Responsive Mobile */
     .calculator-card {
-        padding: 24px 16px;
+        padding: 22px 16px;
     }
 
     .calc-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 14px;
     }
 
     .calc-group.full-width {
@@ -2546,9 +2600,9 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
     .calc-result-box {
         flex-direction: column;
         align-items: stretch;
-        gap: 18px;
+        gap: 16px;
         text-align: center;
-        padding: 22px 16px;
+        padding: 20px 16px;
     }
 
     .result-details {
@@ -2560,28 +2614,28 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
     }
 
     .res-price {
-        font-size: 1.65rem;
+        font-size: 1.6rem;
     }
 
-    /* Certifications Section Responsive Mobile */
-    .cert-card {
-        padding: 24px 16px;
+    /* Certifications & Forms Mobile Spacing */
+    .cert-card,
+    .cert-cta-box,
+    .callback-form,
+    .about-card {
+        padding: 22px 16px;
     }
 
     .cert-text h2 {
-        font-size: 1.55rem;
-    }
-
-    .cert-cta-box {
-        padding: 24px 16px;
+        font-size: 1.45rem;
     }
 
     .cert-cta-box h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
-    .callback-form {
-        padding: 22px 16px;
+    /* Footer Mobile Padding to prevent Floating WhatsApp Button overlap */
+    footer, .footer {
+        padding-bottom: 90px !important;
     }
 }
 
