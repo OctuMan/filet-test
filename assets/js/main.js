@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (sendCalcToWA) {
             sendCalcToWA.onclick = () => {
-                window.open(`https://wa.me/212600000000?text=${waText}`, '_blank');
+                window.open(`https://wa.me/212601228339?text=${waText}`, '_blank');
             };
         }
     }

@@ -1940,6 +1940,92 @@ html[dir="rtl"] .faq-trigger {
     color: var(--slate-400);
 }
 
+/* ==========================================================================
+   FLOATING WHATSAPP BUTTON (PULSE & GLOW)
+   ========================================================================== */
+
+.floating-wa-wrapper {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+}
+
+html[dir="rtl"] .floating-wa-wrapper {
+    right: auto;
+    left: 28px;
+}
+
+.floating-wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    background-color: #25d366;
+    color: #ffffff !important;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-wa-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 14px 35px rgba(37, 211, 102, 0.7);
+    color: #ffffff !important;
+}
+
+.floating-wa-btn i, .floating-wa-btn svg {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2.2;
+    color: #ffffff;
+}
+
+.wa-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #0b0f19;
+    color: #34d399;
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+html[dir="rtl"] .wa-badge {
+    right: auto;
+    left: -4px;
+}
+
+.floating-wa-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(37, 211, 102, 0.45);
+    z-index: -1;
+    animation: waPulse 2s infinite;
+}
+
+@keyframes waPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.65);
+        opacity: 0;
+    }
+}
+
 /* MODAL OVERLAY */
 .modal-overlay {
     position: fixed;
