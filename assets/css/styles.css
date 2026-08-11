@@ -2686,34 +2686,201 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* RTL alignment tweaks for new blocks */
-html[dir="rtl"] .credit-item {
-    text-align: right;
+/* ==========================================================================
+   CREDIT & PAYMENT TERMS SECTION (ULTRA-CLEAN MODERN STYLING)
+   ========================================================================== */
+.credit-section {
+    padding: 85px 0;
+    background-color: var(--slate-900);
+    color: var(--white);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-html[dir="rtl"] .tst-author {
-    text-align: right;
+.credit-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    backdrop-filter: blur(20px);
+}
+
+.credit-title {
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.credit-desc {
+    color: var(--slate-300);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.credit-proof {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    color: var(--primary-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.credit-proof i, .credit-proof svg {
+    width: 16px;
+    height: 16px;
+}
+
+.credit-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.credit-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(11, 15, 25, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 16px 20px;
+    border-radius: var(--radius-md);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.credit-item:hover {
+    transform: translateX(4px);
+    border-color: var(--primary-emerald);
+}
+
+html[dir="rtl"] .credit-item:hover {
+    transform: translateX(-4px);
+}
+
+.credit-item-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(16, 185, 129, 0.12);
+    color: var(--primary-emerald);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.credit-item-icon i, .credit-item-icon svg {
+    width: 22px;
+    height: 22px;
 }
 
 .credit-item strong {
-    display: block;
-    margin-bottom: 4px;
-    color: var(--slate-900);
+    color: var(--white);
     font-size: 0.98rem;
+    display: block;
+    margin-bottom: 2px;
 }
 
 .credit-item p {
-    font-size: 0.9rem;
-    color: var(--slate-600);
-    line-height: 1.55;
+    color: var(--slate-300);
+    font-size: 0.86rem;
+    margin: 0;
 }
 
 .credit-cta {
-    margin-top: 12px;
+    margin-top: 8px;
     align-self: flex-start;
 }
-        animation: none;
-    }
+
+/* ==========================================================================
+   CLIENT TESTIMONIALS (ULTRA-CLEAN MODERN CARDS)
+   ========================================================================== */
+.testimonials-section {
+    padding: 85px 0;
+    background-color: var(--slate-50);
+}
+
+.tst-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.tst-card {
+    background: var(--white);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tst-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.tst-stars {
+    color: #f59e0b;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.tst-quote {
+    color: var(--slate-700);
+    font-size: 0.94rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tst-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.tst-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-emerald), #047857);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tst-author strong {
+    display: block;
+    color: var(--slate-900);
+    font-size: 0.92rem;
+    line-height: 1.2;
+}
+
+.tst-author span {
+    font-size: 0.78rem;
+    color: var(--slate-500);
 }
 
 /* ==========================================================================
