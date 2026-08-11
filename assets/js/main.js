@@ -446,6 +446,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modalPhoneInput) modalPhoneInput.placeholder = translations[lang].ph_phone;
 
         updateCalculator();
+        if (window.lucide) {
+            lucide.createIcons();
+        }
     }
 
     if (langFrBtn) langFrBtn.addEventListener('click', () => setLanguage('fr'));

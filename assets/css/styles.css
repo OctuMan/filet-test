@@ -76,6 +76,9 @@ html[dir="rtl"] .btn {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    width: 100%;
 }
 
 body {
@@ -83,7 +86,10 @@ body {
     background-color: var(--slate-50);
     color: var(--slate-800);
     line-height: 1.65;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -530,12 +536,16 @@ body.menu-open {
     flex-direction: column;
     justify-content: space-between;
     transform: translateX(100%);
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
     box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .mobile-drawer.active {
     transform: translateX(0) !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
 }
 
 html[dir="rtl"] .mobile-drawer {
@@ -548,25 +558,31 @@ html[dir="rtl"] .mobile-drawer {
 
 html[dir="rtl"] .mobile-drawer.active {
     transform: translateX(0) !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
 }
 
 .drawer-backdrop {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(11, 15, 25, 0.7);
     backdrop-filter: blur(4px);
     z-index: 10000;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .drawer-backdrop.active {
     opacity: 1;
-    visibility: visible;
+    visibility: visible !important;
+    pointer-events: auto !important;
 }
 
 .drawer-header {
@@ -2460,9 +2476,13 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 8px;
-        margin: 0 -16px 24px;
-        padding-left: 16px;
-        padding-right: 16px;
+        margin: 0 0 24px;
+        width: 100%;
+        max-width: 100%;
+        scrollbar-width: none;
+    }
+    .sector-tabs-wrapper::-webkit-scrollbar {
+        display: none;
     }
     
     .sector-tabs {
