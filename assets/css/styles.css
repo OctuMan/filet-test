@@ -2404,72 +2404,76 @@ html[dir="rtl"] .blog-card:hover .blog-link i, html[dir="rtl"] .blog-card:hover 
 }
 
 @media (max-width: 768px) {
-    /* Hero Section Mobile Optimization */
+    /* Hero Section Mobile Above-The-Fold Compact Optimization */
     .hero-section {
-        padding: 70px 0 45px;
+        padding: 28px 0 20px;
+        min-height: auto;
     }
 
     .hero-bg {
         background-position: center top;
         background-size: cover;
-        opacity: 0.85;
+        opacity: 0.90;
     }
 
     .hero-badge {
-        font-size: 0.76rem;
-        padding: 5px 14px;
-        margin-bottom: 16px;
+        font-size: 0.72rem;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+        letter-spacing: 0.3px;
     }
 
     .hero-title {
-        font-size: 1.85rem;
-        line-height: 1.24;
-        margin-bottom: 14px;
-        letter-spacing: -0.5px;
+        font-size: 1.55rem;
+        line-height: 1.22;
+        margin-bottom: 10px;
+        letter-spacing: -0.4px;
     }
 
     .hero-subtitle {
-        font-size: 0.95rem;
-        line-height: 1.55;
-        margin-bottom: 22px;
+        font-size: 0.88rem;
+        line-height: 1.45;
+        margin-bottom: 16px;
     }
 
     .hero-features-pills {
-        gap: 8px;
-        margin-bottom: 28px;
+        gap: 6px;
+        margin-bottom: 16px;
+        justify-content: center;
     }
 
     .pill {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.76rem;
+        padding: 5px 10px;
     }
 
     .hero-actions {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
-        gap: 12px;
-        margin-bottom: 36px;
+        gap: 8px;
+        margin-bottom: 18px;
     }
 
     .hero-actions .btn {
-        width: 100%;
+        flex: 1;
+        width: auto;
+        padding: 12px 8px;
+        font-size: 0.84rem;
         justify-content: center;
-        padding: 14px 20px;
-        font-size: 0.95rem;
     }
 
     .hero-stats-bar {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        padding: 18px 14px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 12px 6px;
     }
 
     .stat-num {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
 
     .stat-lbl {
-        font-size: 0.78rem;
+        font-size: 0.7rem;
     }
 
     .sector-tabs-wrapper {
